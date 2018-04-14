@@ -5,12 +5,10 @@
     "content_scripts":[
         {
             "matches":[
-                "https://github.com/*",
-                "http://youtube.com/",
-                "https://youtube.com/*",
-                "https://twitter.com/*",
-                "https://facebook,com/*",
-                "https://facebook.com/*"  
+                "*://github.com/*",
+                "*://youtube.com/",
+                "*://twitter.com/*",
+                "*://facebook.com/*"
             ],
             "js":["content.js"]
         }

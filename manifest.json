@@ -1,0 +1,24 @@
+{
+    "manifest_version":2,
+    "name":"Value time",
+    "version":"0.001",
+    "content_scripts":[
+        {
+            "matches":[
+                "https://github.com/*",
+                "http://youtube.com/",
+                "https://youtube.com/*",
+                "https://twitter.com/*",
+                "https://facebook,com/*",
+                "https://facebook.com/*"  
+            ],
+            "js":["content.js"]
+        }
+    ],
+    "background":{
+        "scripts":["background.js"]
+    },
+    "browser_action":{
+        "default_icon":"Stopwatch.png"
+    }
+}
